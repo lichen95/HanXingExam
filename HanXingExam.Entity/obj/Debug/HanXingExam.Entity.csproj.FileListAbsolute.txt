@@ -1,0 +1,6 @@
+F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.Entity\bin\Debug\HanXingExam.Entity.dll
+F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.Entity\bin\Debug\HanXingExam.Entity.pdb
+F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.Entity\obj\Debug\HanXingExam.Entity.csproj.CoreCompileInputs.cache
+F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.Entity\obj\Debug\HanXingExam.Entity.dll
+F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.Entity\obj\Debug\HanXingExam.Entity.pdb
+F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.Entity\obj\Debug\HanXingExam.Entity.csprojAssemblyReference.cache

@@ -1,0 +1,101 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>待考信息</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="~/Content/images/favicon.ico" mce_href="~/Content/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="~/Content/images/favicon.ico" mce_href="~/Content/images/favicon.ico" type="image/x-icon">
+    <link href="~/Content/res/layui/css/layui.css" rel="stylesheet" />
+    <link href="~/Content/res/static/css/mian.css" rel="stylesheet" />
+    <script src="~/Content/js/jquery.min.js"></script>
+</head>
+<body class="lay-blog">
+    <div class="header">
+        <div class="header-wrap">
+            <h1 class="logo pull-left">
+                <a href="/Exam/Index">
+                    <img src="~/Content/res/static/images/logo.png" class="logo-img" />
+                </a>
+            </h1>
+            <div class="blog-nav pull-right">
+                <ul class="layui-nav pull-left">
+                    <li class="layui-nav-item"><a href="/Exam/Index">首页</a></li>
+                    <li class="layui-nav-item"><a href="/Exam/Online">在线考试</a></li>
+                    <li class="layui-nav-item"><a href="/Exam/History">历史试卷</a></li>
+                    <li class="layui-nav-item layui-this"><a href="/Exam/WaitTest">查看待考信息</a></li>
+                </ul>
+                <span class="personal pull-left" style="font-size:12px;color:#fff;">@ViewBag.Student.StudentName&nbsp;&nbsp;</span>
+                <a href="/Students/LogOut" class="personal pull-left">
+                    <img src="~/Content/images/door.png" style="width:20px;height:20px;" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-wrap">
+        <div class="container" style="width:1200px;">
+            <table class="layui-table">
+                <thead>
+                    <tr>
+                        <th>试卷名称</th>
+                        <th>开始时间</th>
+                        <th>截止时间</th>
+                        <th>时长(分钟)</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody1"></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            <span>&copy; 2018</span>
+            <span>深圳创业网络文化科技有限公司</span>
+        </p>
+        <p><span>人生就是一场修行</span></p>
+    </div>
+    <script src="~/Content/res/layui/layui.js"></script>
+    <script src="~/Content/res/static/js/blog.js"></script>
+</body>
+</html>
+<script>
+    $(function () {
+        Show();
+    })
+
+    function Show() {
+        $.ajax({
+            url: "/ExamQuestions/GetExamQuestion?StudentId=" + @ViewBag.Student.StudentId + "&CollegeId=" + @ViewBag.Student.CollegeId + "&MajorId=" + @ViewBag.Student.MajorId + "&StageId=" + @ViewBag.Student.StageId + "&typeId=0",
+            type: "post",
+            dataType:"json",
+            success: function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    var list = '<tr>'
+                        + '<td>' + data[i].ExamName + '</td>'
+                        + '<td>' + data[i].ExamStartDate.replace("T", " ").replace("+08:00", " ") + '</td>'
+                        + '<td>' + data[i].ExamEndDate.replace("T", " ").replace("+08:00", " ") + '</td>'
+                        + '<td>' + diff(data[i]["ExamStartDate"], data[i]["ExamEndDate"]) + '</td>'
+                        + '</tr>';
+                    $("#tbody1").append(list);
+                }
+            }
+        })
+    }
+
+    //计算时间差
+    function diff(faultDate, completeTime) {
+        var stime = Date.parse(new Date(faultDate));
+        var etime = Date.parse(new Date(completeTime));
+        var usedTime = etime - stime;  //两个时间戳相差的毫秒数
+        var minutes = Math.floor(usedTime / (60 * 1000));
+        var time = minutes;
+        return time;
+    }
+</script>

@@ -1,0 +1,168 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>瀚星考试平台</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/Content/css/x-admin.css" media="all">
+    <script src="~/Content/js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="x-body">
+        <form action="" method="post" class="layui-form layui-form-pane" id="form0">
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>班级名
+                </label>
+                <div class="layui-input-inline">
+                    <input type="text" id="ClassName" name="ClassName" required="" lay-verify="required"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>学院
+                </label>
+                <div class="layui-input-inline">
+                    <select name="CollegeId" autocomplete="off" lay-filter="CollegeId" class="layui-input">
+                        <option value="0">--学院--</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>专业
+                </label>
+                <div class="layui-input-inline">
+                    <select name="MajorId" autocomplete="off"  lay-filter="MajorId"  class="layui-input">
+                        <option value="0">--专业--</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>阶段
+                </label>
+                <div class="layui-input-inline">
+                    <select name="StageId" autocomplete="off" class="layui-input">
+                        <option value="0">--阶段--</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <input type="button" class="layui-btn" lay-submit="" lay-filter="add" value="增加" />
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="/Content/lib/layui/layui.js" charset="utf-8">
+    </script>
+    <script src="/Content/js/x-layui.js" charset="utf-8">
+    </script>
+    <script>
+        $(function () {
+            //学院
+            $.ajax({
+                url: "/Users/GetColleges",
+                type: "post",
+                async: false,
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                    for (var i = 0; i < data.length; i++) {
+                        var op = '<option value="' + data[i].CollegeId + '">' + data[i].CollegeName + '</option>'
+                        $("[name=CollegeId]").append(op);
+                    }
+                }
+            })
+
+            
+        })
+
+        layui.use(['form', 'layer'], function () {
+            $ = layui.jquery;
+            var form = layui.form()
+                , layer = layui.layer;
+
+            form.on('select(CollegeId)', function (data) {
+                console.log(12);
+                $.ajax({
+                    url: "/Users/GetMajorsByCollegeId?CollegeId=" + $("[name=CollegeId]").val(),
+                    type: "post",
+                    async: false,
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data);
+                        $("[name=MajorId]").empty();
+                        $("[name=MajorId]").append('<option value="0">--专业--</option>');
+                        for (var i = 0; i < data.length; i++) {
+                            var op = '<option value="' + data[i].MajorId + '">' + data[i].MajorName + '</option>'
+                            $("[name=MajorId]").append(op);
+                            form.render('select');
+                        }
+                    }
+                })
+            })
+               //阶段
+            form.on('select(MajorId)', function (data) {
+                $.ajax({
+                    url: "/Users/GetStages?MajorId=" + $("[name=MajorId]").val(),
+                    type: "post",
+                    async: false,
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data);
+                        $("[name=StageId]").empty();
+                        $("[name=StageId]").append('<option value="0">--阶段--</option>');
+                        for (var i = 0; i < data.length; i++) {
+                            var op = '<option value="' + data[i].StageId + '">' + data[i].StageName + '</option>'
+                            $("[name=StageId]").append(op);
+                            form.render('select');
+                        }
+                    }
+                })
+            })
+
+            //监听提交
+            form.on('submit(add)', function () {
+                $.ajax({
+                    url: "/Classes/Add",
+                    type: "post",
+                    data: $("#form0").serialize(),
+                    success: function (data) {
+                        console.log(data);
+                        if (data) {
+                            layer.alert("增加成功", { icon: 6 }, function () {
+                                // 获得frame索引
+                                var index = parent.layer.getFrameIndex(window.name);
+                                //关闭当前frame
+                                parent.layer.close(index);
+                                window.parent.location.reload();
+                            });
+                        }
+                        else {
+                            layer.msg('增加失败!', { icon: 2, time: 1000 });
+                        }
+                    },
+                    error: function (e) {
+                        console.log(e);
+                    }
+                })
+            });
+        });
+    </script>
+</body>
+</html>

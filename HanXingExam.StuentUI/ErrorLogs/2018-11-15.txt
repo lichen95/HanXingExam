@@ -1,0 +1,12 @@
+用户IP:::1
+异常时间：2018/11/15 20:03:08
+异常地址：http://localhost:58589/HistoricalPapers/QueryHis
+异常信息：值不能为 null。
+参数名: source
+错误源：System.Core
+运行类型：System.ArgumentNullException
+异常函数：Void .ctor(System.Collections.Generic.IEnumerable`1[TElement], System.Func`2[TElement,TKey], System.Collections.Generic.IComparer`1[TKey], Boolean)
+堆栈信息：   在 System.Linq.OrderedEnumerable`2..ctor(IEnumerable`1 source, Func`2 keySelector, IComparer`1 comparer, Boolean descending)
+   在 System.Linq.Enumerable.OrderByDescending[TSource,TKey](IEnumerable`1 source, Func`2 keySelector)
+   在 HanXingExam.StuentUI.Controllers.HistoricalPapersController.QueryHis(Int32 StudentId, Nullable`1 startDate, Nullable`1 endDate, Int32 pageIndex, Int32 pageSize) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.StuentUI\Controllers\HistoricalPapersController.cs:行号 54
+********************************************************************************************

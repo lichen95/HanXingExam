@@ -1,0 +1,62 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>考试平台登录</title>
+    <link rel="icon" href="~/Content/images/favicon.ico" mce_href="~/Content/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="~/Content/images/favicon.ico" mce_href="~/Content/images/favicon.ico" type="image/x-icon">
+    <link href="~/Content/css/fonts/login.css" rel="stylesheet" />
+    <script src="~/Content/lib/layui/layui.js"></script>
+    <script src="~/Content/js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="login_box">
+        <div class="login_l_img"><img src="~/Content/images/login-img.png" /></div>
+        <div class="login">
+            <div class="login_logo"><img src="~/Content/images/login_logo.jpg" /></div>
+            <div class="login_name">
+                <p>翰星考试平台</p>
+            </div>
+            <form method="post" action="/Students/StudentLogin" class="layui-form">
+                <input name="name" class="layui-input" lay-verify="required" lay-filter="name" type="text" value="用户名" onfocus="this.value=''" onblur="if(this.value==''){this.value='用户名'}">
+                <span id="password_text" onclick="this.style.display='none';document.getElementById('password').style.display='block';document.getElementById('password').focus().select();">密码</span>
+                <input name="pwd" class="layui-input" type="password" id="password" lay-verify="required" lay-filter="pwd" style="display:none;" onblur="if(this.value==''){document.getElementById('password_text').style.display='block';this.style.display='none'};" />
+                <input type="submit" style="width:100%;" class="layui-btn" lay-submit="" lay-filter="login" value="登录" />
+            </form>
+        </div>
+        <div class="copyright">
+            <span>&copy; 2018</span>
+            <span>&nbsp;&nbsp;深圳创业网络文化科技有限公司</span>
+            <p>技术支持邮箱：594281739@qq.com</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    layui.use(['form'], function () {
+        $ = layui.jquery;
+        var form = layui.form(),
+            layer = layui.layer;
+
+        //监听提交
+        form.on('submit(name)', function (data) {
+            if ($("[name=name]").val() == "")
+                return false;
+        });
+
+        //监听提交
+        form.on('submit(pwd)', function (data) {
+            if ($("[name=pwd]").val() == "")
+                return false;
+        });
+    });
+</script>

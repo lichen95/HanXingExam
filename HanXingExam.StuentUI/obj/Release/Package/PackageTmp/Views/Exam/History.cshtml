@@ -1,0 +1,208 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>历史试卷</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="~/Content/images/favicon.ico" mce_href="~/Content/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="~/Content/images/favicon.ico" mce_href="~/Content/images/favicon.ico" type="image/x-icon">
+    <link href="~/Content/res/layui/css/layui.css" rel="stylesheet" />
+    <link href="~/Content/res/static/css/mian.css" rel="stylesheet" />
+</head>
+<body class="lay-blog">
+    <div class="header">
+        <div class="header-wrap">
+            <h1 class="logo pull-left">
+                <a href="/Exam/Index">
+                    <img src="~/Content/res/static/images/logo.png" class="logo-img" />
+                </a>
+            </h1>
+            <div class="blog-nav pull-right">
+                <ul class="layui-nav pull-left">
+                    <li class="layui-nav-item"><a href="/Exam/Index">首页</a></li>
+                    <li class="layui-nav-item"><a href="/Exam/Online">在线考试</a></li>
+                    <li class="layui-nav-item layui-this"><a href="/Exam/History">历史试卷</a></li>
+                    <li class="layui-nav-item"><a href="/Exam/WaitTest">查看待考信息</a></li>
+                </ul>
+                <span class="personal pull-left" style="font-size:12px;color:#fff;">@ViewBag.Student.StudentName&nbsp;&nbsp;</span>
+                <a href="/Students/LogOut" class="personal pull-left">
+                    <img src="~/Content/images/door.png" style="width:20px;height:20px;" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-wrap">
+        <div class="container" style="width:1200px;">
+            <div class="layui-form-pane x-center" style="margin-top: 15px; width:1200px;">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">日期范围</label>
+                    <div class="layui-input-inline">
+                        <input class="layui-input" placeholder="开始日" id="LAY_demorange_s">
+                    </div>
+                    <div class="layui-input-inline">
+                        <input class="layui-input" placeholder="截止日" id="LAY_demorange_e">
+                    </div>
+                    <div class="layui-input-inline" style="width:80px">
+                        <button id="sel" class="layui-btn" lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="x-body">
+                <table class="layui-table">
+                    <thead>
+                        <tr>
+                            <th>学号</th>
+                            <th>学生姓名</th>
+                            <th>试卷名称</th>
+                            <th>提交考试时间</th>
+                            <th>得分</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyList"></tbody>
+                </table>
+                <div id="page"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            <span>&copy; 2018</span>
+            <span>深圳创业网络文化科技有限公司</span>
+        </p>
+        <p><span>人生就是一场修行</span></p>
+    </div>
+    <script src="/Content/lib/layui/layui.js" charset="utf-8"></script>
+    <script src="/Content/js/x-layui.js" charset="utf-8"></script>
+    <script src="~/Content/js/jquery-3.1.1.js"></script>
+</body>
+</html>
+<script>
+    //定义全局变量记录页码信息
+    var PageIndex;
+
+    layui.use(['layer','laydate', 'laypage'], function () {
+        $ = layui.jquery;//jquery
+        laydate = layui.laydate;//日期插件
+        laypage = layui.laypage;//分页
+
+        var start = {
+            min: '1999-01-01 00:00:00'
+            , max: '2099-06-16 23:59:59'
+            , istoday: false
+            , choose: function (datas) {
+                end.min = datas; //开始日选好后，重置结束日的最小日期
+                end.start = datas //将结束日的初始值设定为开始日
+            }
+        };
+
+        var end = {
+            min: '1999-01-01 00:00:00'
+            , max: '2099-06-16 23:59:59'
+            , istoday: false
+            , choose: function (datas) {
+                start.max = datas; //结束日选好后，重置开始日的最大日期
+            }
+        };
+
+        //开始时间
+        document.getElementById('LAY_demorange_s').onclick = function () {
+            start.elem = this;
+            laydate(start);
+        }
+
+        //结束时间
+        document.getElementById('LAY_demorange_e').onclick = function () {
+            end.elem = this
+            laydate(end);
+        }
+
+        $(function () {
+            //查询数据
+            show();
+        });
+
+        //查询
+        $("#sel").click(function () {
+            show(PageIndex);
+        })
+
+        //显示
+        function show(PageIndex) {
+            $.ajax({
+                url: "/HistoricalPapers/QueryHis",
+                data: {
+                    startDate: $("#LAY_demorange_s").val(),
+                    endDate: $("#LAY_demorange_e").val(),
+                    pageIndex: PageIndex,
+                    pageSize: 10,
+                    StudentId: @ViewBag.Student.StudentId,
+                },
+                type: "post",
+                dataType: "json",
+                success: function (data) {
+                    $("#tbodyList").empty();
+                    $("#pageCOunt").html(data.PageCount);
+                    for (var i = 0; i < data.Data.length; i++) {
+                        var tr = '<tr>'
+                            + '<td>' + data.Data[i].StudentNum + '</td>'
+                            + '<td>' + data.Data[i].StudentName + '</td>'
+                            + '<td>' + data.Data[i].ExamName + '</td>'
+                            + '<td>' + data.Data[i].CreateDate.replace("T", " ") + '</td>'
+                            + '<td>' + data.Data[i].ScoreNum + '</td>'
+                            + '<td class="td-manage"><a title="查看" href="javascript:;" onclick="His_cha(\'' + data.Data[i].ExamEndDate+'\',\'' + data.Data[i].ExamQuestionId + '\')" class="ml-5" style="text-decoration:none"><i class="layui-icon">&#xe60a;</i></a></td>'
+                            + '</tr>';
+                        $("#tbodyList").append(tr);
+                    }
+
+                    var page = Math.ceil(data.PageCount / 10);  //总页数
+                    var curr = PageIndex;    //当前页
+
+                    laypage({
+                        cont: 'page',   //分页需要显示的地方
+                        pages: page,    //总页数
+                        curr: curr,     //当前页
+                        groups: 3,      //连续显示分页数
+                        skip: true,     //是否开启跳页
+                        first: '首页',
+                        last: '尾页',
+                        skin: 'molv',   //加载内置皮肤，也可以直接赋值16进制颜色值，如:#c00
+                        prev: '<em><</em>',      // 若不显示，设置false即可
+                        next: '<em>></em>',      //若不显示，设置false即可
+                        jump: function (e, first) { //触发分页后的回调
+                            if (!first) { //一定要加此判断，否则初始时会无限刷新
+                                PageIndex = e.curr;
+                                show(PageIndex);
+                            }
+                        }
+                    });
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            })
+        }
+    });
+
+    function His_cha(time, id) {
+        var d = new Date(), str = '';
+        str += d.getFullYear() + '-';
+        str += d.getMonth() + 1 + '-';
+        str += d.getDate() + ' ';
+        str += d.getHours() + ':';
+        str += d.getMinutes() + ':';
+        str += d.getSeconds();
+        time = time.replace("T", " ");
+        if (str < time) {
+            layer.msg('考试还没有结束,您暂时不能查看历史试卷!', { icon: 4 });
+            return;
+        }
+        location.href = "/Exam/HisXiang?ExamQuestionId=" + id;
+    }
+</script>

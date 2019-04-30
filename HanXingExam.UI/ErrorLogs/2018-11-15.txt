@@ -1,0 +1,1336 @@
+用户IP:169.254.86.153
+异常时间：2018/11/15 13:51:51
+异常地址：http://169.254.152.183:9999/Student/OutStudent
+异常信息：对路径“C:\636778867111229310学生信息表.xls”的访问被拒绝。
+错误源：HanXingExam.UI
+运行类型：System.Exception
+异常函数：Int32 DataTableToExcel(System.Data.DataTable, System.String, Boolean, System.String)
+堆栈信息：   在 HanXingExam.UI.ExcelHelper.DataTableToExcel(DataTable data, String sheetName, Boolean isColumnWritten, String fileName) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.UI\Content\ExcelHelper.cs:行号 218
+   在 HanXingExam.UI.Controllers.StudentController.OutStudent() 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.UI\Controllers\StudentController.cs:行号 213
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:33
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd9661)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:08:46
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd7577)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:35
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:36
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd112)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:36
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd5335)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:09:36
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd5335)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:10:16
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd5626)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:10:16
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd851)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:10:17
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd851)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:10:17
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd6074)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:10:18
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd6074)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:10:18
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd1299)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:10:18
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd1299)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:10:19
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd1299)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:10:19
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd6522)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:10:20
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd6522)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:10:20
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd1748)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:10:21
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd1748)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:10:21
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd6971)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:37
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd560)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:37
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd560)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:38
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd560)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:38
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd5783)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:38
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd5783)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:38
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd5783)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:39
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd5783)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:39
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd1009)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:39
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd1009)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:39
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd1009)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:40
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd1009)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:40
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd6232)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:40
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd6232)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:40
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd6232)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:41
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd6232)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:11:41
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (yyyyMMdd1457)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:13:00
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811155493)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:13:00
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811157261)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:13:01
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811157261)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:13:02
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811152487)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:13:03
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811157710)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:13:03
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811152935)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:13:04
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811152935)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:13:05
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811158158)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:13:06
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811153384)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:13:06
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811158607)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:13:07
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811158607)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:13:08
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811153832)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:16:52
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811158922)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.Add(Students t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 42
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:26:05
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811158158)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.AddList(List`1 t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 60
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:26:32
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811154438)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.AddList(List`1 t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 60
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:29:58
+异常地址：http://localhost:53600/Questions/InputQuestions
+异常信息：未将对象引用设置到对象的实例。
+错误源：HanXingExam.UI
+运行类型：System.NullReferenceException
+异常函数：Int32 InputQuestions(Int32)
+堆栈信息：   在 HanXingExam.UI.Controllers.QuestionsController.InputQuestions(Int32 UsersId) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.UI\Controllers\QuestionsController.cs:行号 168
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:33:27
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811154280)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.AddList(List`1 t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 60
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:34:32
+异常地址：http://localhost:53600/Student/InputStudent?UsersId=1
+异常信息：违反了 UNIQUE KEY 约束“UQ__Students__B98EFCB45F680E61”。不能在对象“dbo.Students”中插入重复键。重复键值为 (201811158922)。
+语句已终止。
+错误源：.Net SqlClient Data Provider
+运行类型：System.Data.SqlClient.SqlException
+异常函数：Int32 ExecuteCommand(System.String, SqlSugar.SugarParameter[])
+堆栈信息：   在 SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   在 SqlSugar.InsertableProvider`1.ExecuteCommand()
+   在 HanXingExam.DAL.StudentDAL.AddList(List`1 t) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.DAL\StudentDAL.cs:行号 60
+********************************************************************************************
+用户IP:::1
+异常时间：2018/11/15 19:48:42
+异常地址：http://localhost:53600/Questions/InputQuestions
+异常信息：未将对象引用设置到对象的实例。
+错误源：HanXingExam.UI
+运行类型：System.NullReferenceException
+异常函数：Int32 InputQuestions(Int32)
+堆栈信息：   在 HanXingExam.UI.Controllers.QuestionsController.InputQuestions(Int32 UsersId) 位置 F:\14.大实训\ExamOnline\HanXingExam\HanXingExam.UI\Controllers\QuestionsController.cs:行号 168
+********************************************************************************************

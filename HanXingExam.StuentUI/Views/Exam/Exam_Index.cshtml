@@ -1,0 +1,631 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>翰星教育考试平台_在线考试</title>
+    <link rel="icon" href="~/Content/images/favicon.ico" mce_href="~/Content/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="~/Content/images/favicon.ico" mce_href="~/Content/images/favicon.ico" type="image/x-icon">
+    <link href="~/Content/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/iconfont.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/css/test.css" rel="stylesheet" />
+    <script src="~/Content/lib/layui/layui.js"></script>
+    <script src="/Content/js/x-layui.js" charset="utf-8"></script>
+    <script src="~/content/js/jquery-1.11.3.min.js"></script>
+    <script src="~/Content/js/jquery.easy-pie-chart.js"></script>
+    <script src="~/Content/js/jquery.cookie.js"></script>
+    <script>
+        if ($.cookie('state'+@ViewBag.Student.StudentId + $.cookie('ExamQuestionId')) != null)
+            location.href = '/Exam/Index';
+    </script>
+
+
+    <style>
+        .hasBeenAnswer {
+            background: #5d9cec;
+            color: #fff;
+        }
+
+        .bos {
+            width: 760px;
+            white-space: normal;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!--nr start-->
+        <div class="test_main">
+            <div class="nr_left">
+                <div class="test">
+                    <form class="layui-form">
+                        <div class="test_title">
+                            <p class="test_time"><b class="alt-1"></b></p>
+                            <font>
+                                <input type="button" name="test_jiaojuan" lay-submit="" lay-filter="add" value="交卷" />
+                            </font>
+                        </div>
+                        <div class="test_content">
+                            <div class="test_content_title">
+                                <h2>单选题</h2>
+                                <p>
+                                    <span>共</span>
+                                    <i class="content_lit" name="i1"></i>
+                                    <span>题，</span>
+                                    <span>合计</span>
+                                    <i class="content_fs" id="i4"></i>
+                                    <span>分</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="test_content_nr">
+                            <ul id="ul1"></ul>
+                        </div>
+                        <div class="test_content">
+                            <div class="test_content_title">
+                                <h2>多选题</h2>
+                                <p>
+                                    <span>共</span>
+                                    <i class="content_lit" name="i2"></i>
+                                    <span>题，</span>
+                                    <span>合计</span>
+                                    <i class="content_fs" id="i5"></i>
+                                    <span>分</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="test_content_nr">
+                            <ul id="ul2"></ul>
+                        </div>
+                        <div class="test_content">
+                            <div class="test_content_title">
+                                <h2>判断题</h2>
+                                <p>
+                                    <span>共</span>
+                                    <i class="content_lit" name="i3"></i>
+                                    <span>题，</span>
+                                    <span>合计</span>
+                                    <i class="content_fs" id="i6"></i>
+                                    <span>分</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="test_content_nr">
+                            <ul id="ul3"></ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="nr_right">
+                <div class="nr_rt_main">
+                    <div class="rt_nr1" style="overflow-x:hidden;overflow-y:auto;height:100%;width:290px;">
+                        <div class="rt_nr1_title">
+                            <h1>答题卡</h1>
+                            <p class="test_time"><b class="alt-1"></b></p>
+                        </div>
+                        <div class="rt_content">
+                            <div class="rt_content_tt">
+                                <h2>单选题</h2>
+                                <p>
+                                    <span>共</span><i class="content_lit" name="i1"></i><span>题</span>
+                                </p>
+                            </div>
+                            <div class="rt_content_nr answerSheet">
+                                <ul id="ul4"></ul>
+                            </div>
+                        </div>
+                        <div class="rt_content">
+                            <div class="rt_content_tt">
+                                <h2>多选题</h2>
+                                <p>
+                                    <span>共</span><i class="content_lit" name="i2"></i><span>题</span>
+                                </p>
+                            </div>
+                            <div class="rt_content_nr answerSheet">
+                                <ul id="ul5"></ul>
+                            </div>
+                        </div>
+                        <div class="rt_content">
+                            <div class="rt_content_tt">
+                                <h2>判断题</h2>
+                                <p>
+                                    <span>共</span><i class="content_lit" name="i3"></i><span>题</span>
+                                </p>
+                            </div>
+                            <div class="rt_content_nr answerSheet">
+                                <ul id="ul6"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--nr end-->
+        <div class="foot"></div>
+    </div>
+
+</body>
+</html>
+<script>
+    //试题总数的变量
+    var count = 0;
+
+    //点击右键 无动作
+    document.oncontextmenu = new Function("return false");
+
+    //禁用F12
+    document.onkeydown = function (e) {
+        var currKey = 0, evt = e || window.event;
+        currKey = evt.keyCode || evt.which || evt.charCode;
+        if (currKey == 123) {
+            window.event.cancelBubble = true;
+            window.event.returnValue = false;
+        }
+    }
+
+
+    window.jQuery(function ($) {
+        "use strict";
+        $('time').countDown({
+            with_separators: false
+        });
+        $('.alt-1').countDown({
+            css_class: 'countdown-alt-1'
+        });
+        $('.alt-2').countDown({
+            css_class: 'countdown-alt-2'
+        });
+    });
+
+    //点击右侧选择
+    function abc(obj) {
+
+        if ($(obj).prop("checked")) {
+            var examId = $(obj).closest('.test_content_nr_main').closest('li').attr('id'); // 得到题目ID
+            var cardLi = $('a[href=#' + examId + ']'); // 根据题目ID找到对应答题卡
+            // 设置已答题
+            if (!cardLi.hasClass('hasBeenAnswer')) {
+                cardLi.addClass('hasBeenAnswer');
+            }
+        }
+        else {
+            var f = 0;
+            var t = 0;
+            var examId = $(obj).closest('.test_content_nr_main').closest('li').attr('id'); // 得到题目ID
+            var cardLi = $('a[href=#' + examId + ']'); // 根据题目ID找到对应答题卡
+
+            $("[name=" + $(obj).prop("name") + "]").each(function () {
+                console.log($(this).prop("checked"));
+                if (!$(this).prop("checked")) {
+                    f += 1;
+                }
+                else {
+                    t += 1;
+                }
+            })
+            if (t > 0) {
+                cardLi.addClass('hasBeenAnswer');
+            }
+            else {
+                // 设置已答题
+                cardLi.removeClass('hasBeenAnswer');
+            }
+        }
+    }
+    //获取随机
+    function getRandomArrayElements(arr, count) {
+        var shuffled = arr.slice(0), i = arr.length, min = i - count, temp, index;
+        while (i-- > min) {
+            index = Math.floor((i + 1) * Math.random());
+            temp = shuffled[index];
+            shuffled[index] = shuffled[i];
+            shuffled[i] = temp;
+        }
+        return shuffled.slice(min);
+    }
+
+    var d = new Date(), str = '';
+    str += d.getFullYear() + '-';
+    str += d.getMonth() + 1 + '-';
+    str += d.getDate() + ' ';
+    str += d.getHours() + ':';
+    str += d.getMinutes() + ':';
+    str += d.getSeconds();
+
+    function diff(faultDate, completeTime) {
+        var stime = Date.parse(new Date(faultDate.replace(/-/g, "/")));
+        var etime = Date.parse(new Date(completeTime));
+        var usedTime = etime - stime;  //两个时间戳相差的毫秒数
+        var minutes = Math.floor(usedTime / (60 * 1000));
+        var time = minutes;
+        return time;
+    }
+
+    //获取时间间隔
+    var time = parseInt(diff(str, $.cookie('ExamEndDate')));
+
+    //计算时间
+    hour = Math.floor(time / 60);
+    minutes = Math.floor(time % 60);
+    $(".alt-1").text(hour + ":" + minutes);
+
+    //初始化layui
+    layui.use(['form', 'layer'], function () {
+        $ = layui.jquery;//jquery
+        var form = layui.form()
+        layer = layui.layer;//弹出层
+
+        var index = 0;
+        $(function () {
+            $.ajax({
+                url: "/Examine/QueryByEQId",
+                data: {
+                    ExamQuestionId: $.cookie('ExamQuestionId'),
+                },
+                type: "post",
+                beforeSend: function () {
+                    //加载层
+                     index = layer.load(0, { shade: false }); //0代表加载的风格，支持0-2
+                },
+                complete: function () {
+                    layer.close(index);
+                },
+                success: function (data) {
+                    var json = JSON.parse(data);
+                    switch (json.length) {
+                        case 20:
+                            $("[name=i1]").html(10);
+                            $("#i4").html(50);
+                            $("[name=i2]").html(5);
+                            $("#i5").html(25);
+                            $("[name=i3]").html(5);
+                            $("#i6").html(25);
+                            break;
+                        case 40:
+                            $("[name=i1]").html(20);
+                            $("#i4").html(60);
+                            $("[name=i2]").html(10);
+                            $("#i5").html(20);
+                            $("[name=i3]").html(10);
+                            $("#i6").html(20);
+                            break;
+                        case 60:
+                            $("[name=i1]").html(20);
+                            $("#i4").html(40);
+                            $("[name=i2]").html(20);
+                            $("#i5").html(40);
+                            $("[name=i3]").html(20);
+                            $("#i6").html(20);
+                            break;
+                        default:
+                            $("[name=i1]").html(40);
+                            $("#i4").html(40);
+                            $("[name=i2]").html(30);
+                            $("#i5").html(30);
+                            $("[name=i3]").html(30);
+                            $("#i6").html(30);
+                            break;
+                    }
+                    console.log(json);
+                    count = json.length;
+                    for (var i = 0; i < json.length; i++) {
+                        switch (json[i]["TypeId"]) {
+                            case 1:
+                                //将选项加入数组
+                                var items = ["A" + json[i]["OptionA"], "B" + json[i]["OptionB"], "C" + json[i]["OptionC"], "D" + json[i]["OptionD"]];
+                                //接收随机选项
+                                var item = [];
+                                item = getRandomArrayElements(items, 4);
+                                var single = '<li id="qu_0_' + i + '">'
+                                    + '<div class="test_content_nr_tt">'
+                                    + '<i>' + (i + 1) + '</i><font><xmp class="bos">' + json[i]["QuestionTitle"] + '</xmp></font> '
+                                    + '</div> <div class="test_content_nr_main">'
+                                    + '<ul>'
+                                    + '<li onclick="addCookie('+i+')" class="option">'
+                                    + '<input type="radio" typeId="1" num="' + json[i].QuestionNum + '" class="radioOrCheck" name="answer' + i + '" id= "0_answer_' + i + '_option_1" onclick="abc(this)" value="' + item[0].substr(0, 1) + '" /> '
+                                    + '<label for="0_answer_' + i + '_option_1">A.'
+                                    + '<p class="ue" style="display: inline;" name="p' + i + '"  ><xmp class="bos" style="display: inline;">' + item[0].substr(1, item[0].length) + '</xmp></p> '
+                                    + '</label>'
+                                    + '</li>'
+                                    + '<li onclick="addCookie(' + i +')" class="option">'
+                                    + '<input type="radio" typeId="1" num="' + json[i].QuestionNum + '"  class="radioOrCheck" name="answer' + i + '" id="0_answer_' + i + '_option_2" onclick="abc(this)"  value="' + item[1].substr(0, 1) + '" /> '
+                                    + '<label for="0_answer_' + i + '_option_2">B.'
+                                    + '<p class="ue" style="display: inline;" name="p' + i + '" ><xmp class="bos" style="display: inline;">' + item[1].substr(1, item[1].length) + '</xmp></p> '
+                                    + '</label>'
+                                    + '</li>'
+                                    + '<li onclick="addCookie(' + i +')" class="option">'
+                                    + '<input type="radio" typeId="1" num="' + json[i].QuestionNum + '"  class="radioOrCheck" name="answer' + i + '" id="0_answer_' + i + '_option_3" onclick="abc(this)"  value="' + item[2].substr(0, 1) + '" /> '
+                                    + '<label for="0_answer_' + i + '_option_3">C.'
+                                    + '<p class="ue" style="display: inline;" name="p' + i + '" ><xmp class="bos" style="display: inline;">' + item[2].substr(1, item[2].length) + '</xmp></p> '
+                                    + '</label>'
+                                    + '</li>'
+                                    + '<li onclick="addCookie(' + i +')" class="option">'
+                                    + '<input type="radio" typeId="1" num="' + json[i].QuestionNum + '"  class="radioOrCheck" name="answer' + i + '" id="0_answer_' + i + '_option_4" onclick="abc(this)"  value="' + item[3].substr(0, 1) + '" /> '
+                                    + '<label for="0_answer_' + i + '_option_4" >D.'
+                                    + '<p class="ue" style="display: inline;" name="p' + i + '" ><xmp class="bos" style="display: inline;">' + item[3].substr(1, item[3].length) + '</xmp></p>'
+                                    + '</label>'
+                                    + '</li>'
+                                    + '</ul>'
+                                    + '</div>'
+                                    + '</li > ';
+                                $("#ul1").append(single);
+                                var a = ' <li><a href="#qu_0_' + i + '">' + (i + 1) + '</a></li> ';
+                                $("#ul4").append(a);
+
+                                if (json[i].Answer != null) {
+                                    $("[name=answer" + i + "]").each(function () {
+                                        if ($(this).val() == json[i].Answer) {
+                                            $(this).prop("checked", "checked");
+                                            abc($(this))
+                                        }
+                                                 
+                                    })
+                                }
+
+                                break;
+                            case 2:
+                                //将选项加入数组
+                                var items = ["A" + json[i]["OptionA"], "B" + json[i]["OptionB"], "C" + json[i]["OptionC"], "D" + json[i]["OptionD"]];
+                                //接收随机选项
+                                var item = [];
+                                item = getRandomArrayElements(items, 4);
+                                var more = '<li id="qu_1_' + i + '">'
+                                    + '<div class="test_content_nr_tt" >'
+                                    + '<i>' + (i + 1) + '</i><font><xmp class="bos">' + json[i]["QuestionTitle"] + '</xmp></font>'
+                                    + '</div >'
+                                    + '<div class="test_content_nr_main">'
+                                    + '<ul>'
+                                    + '<li onclick="addCookie(' + i +')" class="option">'
+                                    + '<input type="checkbox" typeId="2" num="' + json[i].QuestionNum + '"  class="radioOrCheck" name="answer' + i + '" id="1_answer_' + i + '_option_1" onclick="abc(this)" value="' + item[0].substr(0, 1) + '" />'
+                                    + '<label for="1_answer_' + i + '_option_1" >A.'
+                                    + '<p class="ue" style="display: inline;" ><xmp class="bos" style="display: inline;">' + item[0].substr(1, item[0].length) + '</xmp></p>'
+                                    + '</label>'
+                                    + '</li>'
+                                    + '<li onclick="addCookie(' + i +')" class="option">'
+                                    + '<input type="checkbox" typeId="2" num="' + json[i].QuestionNum + '"  class="radioOrCheck" name="answer' + i + '" id="1_answer_' + i + '_option_2" onclick="abc(this)" value="' + item[1].substr(0, 1) + '" />'
+                                    + '<label for="1_answer_' + i + '_option_2" >B.'
+                                    + '<p class="ue" style="display: inline;" ><xmp class="bos" style="display: inline;"> ' + item[1].substr(1, item[1].length) + '</xmp></p>'
+                                    + '</label>'
+                                    + '</li>'
+                                    + '<li onclick="addCookie(' + i +')" class="option">'
+                                    + '<input type="checkbox" typeId="2" num="' + json[i].QuestionNum + '"  class="radioOrCheck" name="answer' + i + '" id="1_answer_' + i + '_option_3" onclick="abc(this)" value="' + item[2].substr(0, 1) + '" />'
+                                    + '<label for="1_answer_' + i + '_option_3" >C.'
+                                    + '<p class="ue" style="display: inline;" ><xmp class="bos" style="display: inline;"> ' + item[2].substr(1, item[2].length) + '</xmp></p >'
+                                    + '</label>'
+                                    + '</li>'
+                                    + '<li onclick="addCookie(' + i +')" class="option">'
+                                    + '<input type="checkbox" typeId="2" num="' + json[i].QuestionNum + '"  class="radioOrCheck" name="answer' + i + '" id="1_answer_' + i + '_option_4" onclick="abc(this)" value="' + item[3].substr(0, 1) + '" />'
+                                    + '<label for="1_answer_' + i + '_option_4"  >D.'
+                                    + '<p class="ue" style="display: inline;" ><xmp class="bos" style="display: inline;"> ' + item[3].substr(1, item[3].length) + '</xmp></p >'
+                                    + '</label>'
+                                    + '</li>'
+                                    + '</ul>'
+                                    + '</div>'
+                                    + '</li>';
+                                $("#ul2").append(more);
+                                var b = ' <li><a href="#qu_1_' + i + '">' + (i + 1) + '</a></li> ';
+                                $("#ul5").append(b);
+
+                                if (json[i].Answer != null) {
+                                    var ans = json[i].Answer.split(',')
+                                    for (var j = 0; j < ans.length; j++) {
+                                        $("[name=answer" + i + "]").each(function () {
+                                            if($(this).val() == ans[j]) {
+                                                $(this).prop("checked", "checked");
+                                                abc($(this))
+                                            }
+                                        })
+                                    }
+                                    
+                                }
+
+                                break;
+                            default:
+                                var judge = '<li id="qu_2_' + i + '">'
+                                    + '<div class="test_content_nr_tt">'
+                                    + '<i>' + (i + 1) + '</i><font><xmp class="bos">' + json[i]["QuestionTitle"] + '</xmp></font> '
+                                    + '</div><div class="test_content_nr_main">'
+                                    + '<ul>'
+                                    + '<li onclick="addCookie(' + i +')" class="option">'
+                                    + '<input type="radio" typeId="3" num="' + json[i].QuestionNum + '"  class="radioOrCheck" name="answer' + i + '" id= "2_answer_' + i + '_option_1" onclick="abc(this)" value="A" /> '
+                                    + '<label for="2_answer_' + i + '_option_1">A.'
+                                    + '<p class="ue" style="display: inline;" >正确</p> '
+                                    + '</label>'
+                                    + '</li>'
+                                    + '<li onclick="addCookie(' + i +')" class="option">'
+                                    + '<input type="radio" typeId="3" num="' + json[i].QuestionNum + '"  class="radioOrCheck" name="answer' + i + '" id= "2_answer_' + i + '_option_2" onclick="abc(this)"  value="B"  /> '
+                                    + '<label for="2_answer_' + i + '_option_2" >B.'
+                                    + '<p class="ue" style="display: inline;" >错误</p> '
+                                    + '</label>'
+                                    + '</li>'
+                                    + '</ul>'
+                                    + '</div>'
+                                    + '</li > ';
+                                $("#ul3").append(judge);
+                                var c = ' <li><a href="#qu_2_' + i + '">' + (i + 1) + '</a></li> ';
+                                $("#ul6").append(c);
+
+
+                                if (json[i].Answer != null) {
+                                    $("[name=answer" + i + "]").each(function () {
+                                        if ($(this).val() == json[i].Answer) {
+                                            $(this).prop("checked", "checked");
+                                            abc($(this))
+                                        }
+                                    })
+                                }
+                                break;
+                        }
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            })
+        })
+
+        //到时间自动提交
+        var maxtime = parseInt(diff(str, $.cookie('ExamEndDate'))) * 60;
+        function CountDown() {
+            if (maxtime < 0) {
+                clearInterval(timer);
+                addTest(0);
+            }
+            else {
+                --maxtime;
+            }
+        }
+        timer = setInterval(function () { CountDown(); }, 1000);
+
+        //监听提交
+        form.on('submit(add)', function () {
+            var lock = false; //默认未锁定
+            layer.confirm('确认要交卷吗？', function (index) {
+                if (!lock) {
+                    lock = true;
+                    addTest(1);
+                }
+            })
+        });
+
+        //交卷
+        function addTest(num) {
+            $.cookie('state'+@ViewBag.Student.StudentId + $.cookie('ExamQuestionId'), 1, { path: '/', expires:1 });
+            var index = 0;
+            //交卷
+            var myAnswer = [];
+            for (var i = 0; i < count; i++) {
+                var obj = new Object();
+                obj.QuestionNum = $("input[name=answer" + i + "]:checked").attr("num");
+                obj.TypeId = $("input[name=answer" + i + "]:checked").attr("typeId");
+                var ans = "";
+                $("input[name=answer" + i + "]:checked").each(function () {
+                    if ($(this).val() == "A")
+                        ans += "A";
+                    if ($(this).val() == "B")
+                        ans += "B"
+                    if ($(this).val() == "C")
+                        ans += "C"
+                    if ($(this).val() == "D")
+                        ans += "D"
+                })
+                //要排序的字符串ans
+                ans = ans.split('');//分割字符串
+                ans = ans.sort();  //升序排序（系统自带的方法）
+                obj.Answer = ans.join(""); //把每个元素连接成字符串
+                myAnswer.push(obj);
+            }
+            console.log(myAnswer);
+            if (num == 1) {
+                //判断题目是否做完
+                for (var i = 0; i < myAnswer.length; i++) {
+                    if (myAnswer[i].Answer == "") {
+                        layer.alert('您还有未做完的题呢！快检查检查！', {
+                            icon: 7,
+                        });
+                        return;
+                    }
+                }
+            }
+
+              $.ajax({
+                url: "/Examine/AddTest",
+                type: "post",
+                data: {
+                    answer: JSON.stringify(myAnswer),
+                    ExamQuestionId: ''+$.cookie('ExamQuestionId')+'',
+                    StudentId: @ViewBag.Student.StudentId,
+                    ename:''+ $.cookie('ExamQuestionName')+'',
+                    StudentNum: '@ViewBag.Student.StudentNum',
+                    ExamEndDate:''+$.cookie('ExamEndDate')+'',
+                    StudentName:'@ViewBag.Student.StudentName'
+                  },
+                  beforeSend: function () {
+                      //加载层
+                      index = layer.load(0, { shade: false }); //0代表加载的风格，支持0-2
+                  },
+                  complete: function () {
+                      layer.close(index);
+                  },
+                success: function (data) {
+                    if (data >= 90) {
+                        layer.alert('您的分数是：' + data +"分，恭喜你！革命成功了！！", {
+                            icon: 6,
+                            end: function () {
+                                window.location.href = "/Exam/Online";
+                            }
+                        });
+                    }
+                    if (data < 90 && data >= 50) {
+                        layer.alert('您的分数是：' + data + "分，革命尚未成功,同志仍需努力！！", {
+                            icon: 7,
+                            end: function () {
+                                window.location.href = "/Exam/Online";
+                            }
+                        });
+                    }
+                    if (data < 50) {
+                        layer.alert('您的分数是：' + data + "分，同志要加油啊！革命还需要你！", {
+                            icon: 5,
+                            end: function () {
+                                window.location.href ="/Exam/Online";
+                            }
+                        });
+                    }
+                }
+            })
+        }
+    })
+
+    //写入缓存
+    function addCookie(i) {
+        var qnum = "";
+        var values = "";
+        $("[name=answer" + i + "]").each(function () {
+            qnum = $(this).attr("num");
+            if ($(this).prop("checked")) {
+                values += $(this).val() + ",";
+               
+            }
+            else {
+                $.ajax({
+                    url: "/Examine/SetAnswers",
+                    type: "post",
+                    data: {
+                        qid: qnum,
+                        answer: "",
+                        time: $.cookie('ExamEndDate'),
+                        tid: 1
+                    },
+                    success: function (data) {
+
+                    }
+                })
+            }
+        })
+        $.ajax({
+            url: "/Examine/SetAnswers",
+            type: "post",
+            data: {
+                qid: qnum,
+                answer: values.substr(0, values.length-1),
+                time: $.cookie('ExamEndDate'),
+                tid:0
+            },
+            success: function (data) {
+
+            }
+        })
+       
+    }
+
+
+</script>
+<!--时间js-->
+<script src="~/Content/js/jquery.countdown.js"></script>

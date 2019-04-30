@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E509FE77-8728-40F9-8661-45174D4DD3DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HanXingExam.DAL</RootNamespace>
+    <AssemblyName>HanXingExam.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SqlSugar, Version=4.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sqlSugar.4.8.1\lib\SqlSugar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AnalysisInfoDAL.cs" />
+    <Compile Include="ClassesDAL.cs" />
+    <Compile Include="CollegeDAL.cs" />
+    <Compile Include="DbContext.cs" />
+    <Compile Include="ExamQuestionDAL.cs" />
+    <Compile Include="HistoricalPapersDAL.cs" />
+    <Compile Include="MajorsDAL.cs" />
+    <Compile Include="QuestionsDAL.cs" />
+    <Compile Include="RolesDAL.cs" />
+    <Compile Include="PermissionsDAL.cs" />
+    <Compile Include="ScoresDAL.cs" />
+    <Compile Include="SqlSugarClientHelper.cs" />
+    <Compile Include="StagesDAL.cs" />
+    <Compile Include="StudentDAL.cs" />
+    <Compile Include="UsersDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HanXingExam.Common\HanXingExam.Common.csproj">
+      <Project>{332f606b-fceb-49ca-bcfd-476f91ffbea7}</Project>
+      <Name>HanXingExam.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HanXingExam.Entity\HanXingExam.Entity.csproj">
+      <Project>{fc78a2bf-8c22-468e-8fd9-6236aa0b0758}</Project>
+      <Name>HanXingExam.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HanXingExam.IDAL\HanXingExam.IDAL.csproj">
+      <Project>{fe5267c8-f8bf-4c1f-9c67-ed1d55218ac1}</Project>
+      <Name>HanXingExam.IDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,152 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>瀚星考试平台</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/Content/css/x-admin.css" media="all">
+</head>
+
+<body>
+    <div class="x-body">
+        <form class="layui-form" id="form1">
+            <div class="layui-form-item">
+                <label for="L_name" class="layui-form-label"> <span class="x-red">*</span>学院名称 </label>
+                <div class="layui-input-block">
+                    <input type="text" id="L_name" name="CollegeName" required lay-verify="required" autocomplete="off" class="layui-input">
+                    <input type="hidden" name="CollegeId" id="L_id" required lay-verify="required" autocomplete="off" class="layui-input" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="L_dean" class="layui-form-label"> <span class="x-red">*</span>学院负责人 </label>
+                <div class="layui-input-block">
+                    <input type="text" id="L_dean" name="CollegeDean" required lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="L_phone" class="layui-form-label"> <span class="x-red">*</span>联系方式 </label>
+                <div class="layui-input-block">
+                    <input type="text" id="L_phone" name="CollegePhone" required lay-verify="phone" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="L_date" class="layui-form-label"> <span class="x-red">*</span>创建时间 </label>
+                <div class="layui-input-block">
+                    <input type="text" id="L_date" name="CollegeCreateDate" required lay-verify="date" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="L_desc" class="layui-form-label"> <span class="x-red">*</span>学院简介 </label>
+                <div class="layui-input-block">
+                    <textarea id="L_desc" name="CollegeDesc" required lay-verify="required" autocomplete="off" class="layui-textarea"></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="L_remark" class="layui-form-label"> <span class="x-red">*</span>备注 </label>
+                <div class="layui-input-block">
+                    <textarea id="L_remark" name="CollegeRemark" required lay-verify="required" autocomplete="off" class="layui-textarea"></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <input type="button" class="layui-btn" lay-submit="" lay-filter="update" value="修改" />
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="/Content/lib/layui/layui.js" charset="utf-8">
+    </script>
+    <script src="/Content/js/x-layui.js" charset="utf-8">
+    </script>
+    <script>
+        layui.use(['form', 'layer', 'laydate'], function () {
+            $ = layui.jquery;
+            var form = layui.form()
+                , layer = layui.layer;
+            laydate = layui.laydate;//日期插件
+
+            var start = {
+                min: '1999-01-01 00:00:00'
+                , max: '2099-06-16 23:59:59'
+                , istoday: false
+                , choose: function (datas) {
+                    end.min = datas; //开始日选好后，重置结束日的最小日期
+                    end.start = datas //将结束日的初始值设定为开始日
+                }
+            };
+
+            document.getElementById('L_date').onclick = function () {
+                start.elem = this;
+                laydate(start);
+            }
+
+            var a = "123";
+            a.indexOf('T');
+            a.substring(0,)
+            $(function () {
+                $.ajax({
+                    url: "/College/QuertById",
+                    data: {
+                        Id: @Request.QueryString["Id"],
+                    },
+                    type: "post",
+                    success: function (data) {
+                        var json = JSON.parse(data);
+                        var date = json["CollegeCreateDate"];
+                        var dates = date.substring(0, date.indexOf('T'));
+                        console.log(dates)
+                        $("#L_name").val(json["CollegeName"]);
+                        $("#L_dean").val(json["CollegeDean"]);
+                        $("#L_phone").val(json["CollegePhone"]);
+                        $("#L_date").val(dates);
+                        $("#L_desc").val(json["CollegeDesc"]);
+                        $("#L_remark").val(json["CollegeRemark"]);
+                        $("#L_id").val(@Request.QueryString["Id"]);
+                    },
+                    error: function (e) {
+                        console.log(e);
+                    }
+                })
+            })
+
+
+            form.on('submit(update)', function () {
+                $.ajax({
+                    url: "/College/Update",
+                    data: $("#form1").serialize(),
+                    type: "post",
+                    success: function (data) {
+                        if (data) {
+                            layer.alert("修改成功", { icon: 6 }, function () {
+                                // 获得frame索引
+                                var index = parent.layer.getFrameIndex(window.name);
+                                window.parent.location.reload();
+                                //关闭当前frame
+                                parent.layer.close(index);
+                            });
+                        }
+                        else {
+                            layer.msg('修改失败!', { icon: 2, time: 1000 });
+                        }
+                    },
+                    error: function (e) {
+                        console.log(e);
+                    }
+                })
+            });
+        });
+    </script>
+</body>
+</html>

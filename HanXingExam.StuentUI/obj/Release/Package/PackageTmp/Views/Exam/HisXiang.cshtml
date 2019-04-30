@@ -1,0 +1,266 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>历史试卷</title>
+    <link rel="icon" href="~/Content/images/favicon.ico" mce_href="~/Content/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="~/Content/images/favicon.ico" mce_href="~/Content/images/favicon.ico" type="image/x-icon">
+    <link href="~/Content/css/main.css" rel="stylesheet" />
+    <link href="~/Content/css/iconfont.css" rel="stylesheet" />
+    <link href="~/Content/css/hisstyle.css" rel="stylesheet" />
+    <style>
+        .a {
+            color: #ff0000;
+        }
+        .bos {
+            width: 760px;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!--nr start-->
+        <div class="test_main">
+            <div class="nr_left" style="width:100%;">
+                <div class="test">
+                    <form action="" id="form0" method="post">
+
+                        <div class="test_content">
+                            <div class="test_content_title">
+                                <h2>单选题</h2>
+                                <p>
+                                    <span>共</span>
+                                    <i class="content_lit" name="i1"></i>
+                                    <span>题，</span>
+                                    <span>合计</span>
+                                    <i class="content_fs" id="i4"></i>
+                                    <span>分</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="test_content_nr">
+                            <ul id="ul1"></ul>
+                        </div>
+
+                        <div class="test_content">
+                            <div class="test_content_title">
+                                <h2>多选题</h2>
+                                <p>
+                                    <span>共</span>
+                                    <i class="content_lit" name="i2"></i>
+                                    <span>题，</span>
+                                    <span>合计</span>
+                                    <i class="content_fs" id="i5"></i>
+                                    <span>分</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="test_content_nr">
+                            <ul id="ul2"></ul>
+                        </div>
+
+                        <div class="test_content">
+                            <div class="test_content_title">
+                                <h2>判断题</h2>
+                                <p>
+                                    <span>共</span>
+                                    <i class="content_lit" name="i3"></i>
+                                    <span>题，</span>
+                                    <span>合计</span>
+                                    <i class="content_fs" id="i6"></i>
+                                    <span>分</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="test_content_nr">
+                            <ul id="ul3"></ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--nr end-->
+        <div class="foot"></div>
+    </div>
+    <script src="~/Content/js/jquery-1.11.3.min.js"></script>
+    <script src="~/Content/js/jquery.easy-pie-chart.js"></script>
+    <!--时间js-->
+    <script src="~/Content/js/jquery.countdown.js"></script>
+</body>
+</html>
+<script>
+    $(function () {
+        $.ajax({
+            url: "/Examine/QueryByEQId",
+            data: {
+                ExamQuestionId: "@Request.QueryString["ExamQuestionId"]",
+                TypeId: 1
+            },
+            type: "post",
+            success: function (data) {
+                var json = JSON.parse(data);
+                switch (json.length) {
+                    case 20:
+                        $("[name=i1]").html(10);
+                        $("#i4").html(50);
+                        $("[name=i2]").html(5);
+                        $("#i5").html(25);
+                        $("[name=i3]").html(5);
+                        $("#i6").html(25);
+                        break;
+                    case 40:
+                        $("[name=i1]").html(20);
+                        $("#i4").html(60);
+                        $("[name=i2]").html(10);
+                        $("#i5").html(20);
+                        $("[name=i3]").html(10);
+                        $("#i6").html(20);
+                        break;
+                    case 60:
+                        $("[name=i1]").html(20);
+                        $("#i4").html(40);
+                        $("[name=i2]").html(20);
+                        $("#i5").html(40);
+                        $("[name=i3]").html(20);
+                        $("#i6").html(20);
+                        break;
+                    default:
+                        $("[name=i1]").html(40);
+                        $("#i4").html(40);
+                        $("[name=i2]").html(30);
+                        $("#i5").html(30);
+                        $("[name=i3]").html(30);
+                        $("#i6").html(30);
+                        break;
+                }
+
+                for (var i = 0; i < json.length; i++) {
+                    switch (json[i]["TypeId"]) {
+                        case 1:
+                            var single = '<li id="qu_0_' + i + '">'
+                                + '<div class="test_content_nr_tt">'
+                                + '<i>' + (i + 1) + '</i> <font><xmp class="bos">' + json[i]["QuestionTitle"] + '</xmp></font> '
+                                + '</div> <div class="test_content_nr_main">'
+                                + '<ul>'
+                                + '<li class="option">'
+                                + '<label for="0_answer_' + i + '_option_1" >A.'
+                                + '<p class="ue" style="display: inline;" name="p' + i + '"  ><xmp class="bos" style="display: inline;">' + json[i].OptionA + '</xmp></p> '
+                                + '</label>'
+                                + '</li>'
+                                + '<li class="option">'
+                                + '<label for="0_answer_' + i + '_option_2" >B.'
+                                + '<p class="ue" style="display: inline;" name="p' + i + '" ><xmp class="bos" style="display: inline;"> ' + json[i].OptionB + '</xmp></p> '
+                                + '</label>'
+                                + '</li>'
+                                + '<li class="option">'
+                                + '<label for="0_answer_' + i + '_option_3" >C.'
+                                + '<p class="ue" style="display: inline;" name="p' + i + '" ><xmp class="bos" style="display: inline;">' + json[i].OptionC + '</xmp></p> '
+                                + '</label>'
+                                + '</li>'
+                                + '<li class="option">'
+                                + '<label for="0_answer_' + i + '_option_4" >D.'
+                                + '<p class="ue" style="display: inline;" name="p' + i + '" ><xmp class="bos" style="display: inline;"> ' + json[i].OptionD + '</xmp></p>'
+                                + '</label>'
+                                + '<p>正确答案：<span id="sp_' + i + '">' + json[i].Answer + '</span></p>'
+                                + '<p>我的答案：<b id="mysp_' + i + '"></b></p>'
+                                + '</li>'
+                                + '</ul>'
+                                + '</div>'
+                                + '</li > ';
+                            $("#ul1").append(single);
+                            var a = ' <li><a href="#qu_0_' + i + '">' + (i + 1) + '</a></li> ';
+                            $("#ul4").append(a);
+                            break;
+                        case 2:
+                            var more = '<li id="qu_1_' + i + '">'
+                                + '<div class="test_content_nr_tt" >'
+                                + '<i>' + (i + 1) + '</i><font><xmp class="bos">' + json[i]["QuestionTitle"] + '</xmp></font>'
+                                + '</div >'
+                                + '<div class="test_content_nr_main">'
+                                + '<ul>'
+                                + '<li class="option" style="hover{background:#fff}" >'
+                                + '<label for="1_answer_' + i + '_option_1" >A.'
+                                + '<p class="ue" style="display: inline;" ><xmp class="bos" style="display: inline;"> ' + json[i].OptionA + '</xmp></p>'
+                                + '</label>'
+                                + '</li>'
+                                + '<li class="option">'
+                                + '<label for="1_answer_' + i + '_option_2" >B.'
+                                + '<p class="ue" style="display: inline;" ><xmp class="bos" style="display: inline;"> ' + json[i].OptionB + '</xmp></p>'
+                                + '</label>'
+                                + '</li>'
+                                + '<li class="option">'
+                                + '<label for="1_answer_' + i + '_option_3" >C.'
+                                + '<p class="ue" style="display: inline;" > <xmp class="bos" style="display: inline;"> ' + json[i].OptionC + '</xmp></p >'
+                                + '</label>'
+                                + '</li>'
+                                + '<li class="option">'
+                                + '<label for="1_answer_' + i + '_option_4">D.'
+                                + '<p class="ue" style="display: inline;" ><xmp class="bos" style="display: inline;">  ' + json[i].OptionD + '</xmp></p >'
+                                + '</label>'
+                                + ' <p>正确答案：<span id="sp_' + i + '">' + json[i].Answer + '</span></p>'
+                                + ' <p>我的答案：<b id="mysp_' + i + '"></b></p>'
+                                + '</li>'
+                                + '</ul>'
+                                + '</div>'
+                                + '</li>';
+                            $("#ul2").append(more);
+                            var b = ' <li><a href="#qu_1_' + i + '">' + (i + 1) + '</a></li> ';
+                            $("#ul5").append(b);
+                            break;
+                        default:
+                            var judge = '<li id="qu_2_' + i + '">'
+                                + '<div class="test_content_nr_tt">'
+                                + '<i>' + (i + 1) + '</i> <font><xmp class="bos">' + json[i]["QuestionTitle"] + '</xmp></font> '
+                                + '</div><div class="test_content_nr_main">'
+                                + '<ul>'
+                                + '<li class="option">'
+                                + '<p>正确答案：<span id="sp_' + i + '">' + json[i].Answer + '</span></p>'
+                                + ' <p>我的答案：<b id="mysp_' + i + '"></b></p>'
+                                + '</label>'
+                                + '</li>'
+                                + '</ul>'
+                                + '</div>'
+                                + '</li > ';
+                            $("#ul3").append(judge);
+                            var c = ' <li><a href="#qu_2_' + i + '">' + (i + 1) + '</a></li> ';
+                            $("#ul6").append(c);
+                            break;
+                    }
+                }
+                Qi();
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        })
+    })
+
+    //加载我的答案
+    function Qi() {
+        $.ajax({
+            url: "/HistoricalPapers/GetHisByID",
+            data: {
+                Id: "@Request.QueryString["ExamQuestionId"]",
+                StudentId: @ViewBag.Student.StudentId,
+            },
+            type: "post",
+            dataType: "json",
+            success: function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    if ($("#sp_" + i + "").html() != data[i])
+                        $("#mysp_" + i + "").addClass("a");
+                    $("#mysp_" + i + "").html(data[i]);
+                }
+            }
+        })
+    }
+</script>
+
+
